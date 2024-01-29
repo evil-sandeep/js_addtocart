@@ -59,7 +59,7 @@ function updateCartDisplay() {
             <div class="cart-item">
                 <img src="${item.img}" alt="${item.name}" width="120">
                 <div class="item-details">
-                    <p>${item.name} - $${item.price}</p>
+                    <p>${item.name} -  ₹${item.price}</p>
                     <div class="quantity-controls">
                         <button onclick="decrementQuantity(${item.id})">-</button>
                         <span class="item-quantity">${getCartItemQuantity(item.id)}</span>
