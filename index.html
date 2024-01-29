@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Assignment-1</title>
+</head>
+
+<body>
+
+  <!-- navbar -->
+  <nav>
+    <ul>
+      <li><a href="#" id="home-link">Home</a></li>
+      <li><a href="#" id="about-link">About</a></li>
+      <li><a href="#" id="contact-link">Contact</a></li>
+      <li><a href="#" id="cart-link">Cart</a></li>
+    </ul>
+  </nav>
+
+  <!-- home-page -->
+  <div id="home-page">
+    <h1>Welcome</h1>
+    <div id="product-list"></div>
+  </div>
+
+  <!-- cart page -->
+  <div id="cart-page" style="display: none;">
+    <h2>Your Cart</h2>
+    <div id="cart-container">
+      <ul id="cart-list"></ul>
+      <div id="total-box">
+        <p>Total Price: ₹ <span id="total-price">0</span></p>
+        <button onclick="checkout()">Checkout</button>
+        <button onclick="clearCart()">Clear All</button>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>
